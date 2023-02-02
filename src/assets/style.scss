@@ -1,0 +1,129 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html, body, #app {
+  width: 100%;
+  height: 100%;
+}
+
+
+@media screen and (min-width: 768px) {
+  $HeaderHeight: 50px;
+  $FontSize: 20px;
+  $FontColor: #01C3F7;
+  $ContainerPadding: 12px;
+  #header {
+    width: 100%;
+    height: $HeaderHeight;
+    background: url("./images/header.png") no-repeat center center / 100% 100%;
+    text-align: center;
+    font-size: $FontSize;
+    line-height: $HeaderHeight;
+    color: $FontColor;
+  }
+  #container {
+    width: calc(100% - $ContainerPadding * 2);
+    height: calc(100% - $HeaderHeight - $ContainerPadding * 2);
+    padding: $ContainerPadding;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+
+    .box-a {
+      width: 24%
+
+    }
+
+    .box-b {
+      width: 48%
+    }
+
+    .box-c {
+      width: 24%
+    }
+
+
+    .content {
+      margin-top: 30px;
+      height: calc(100% - 30px);
+      border: 1px solid #0d2451;
+      position: relative;
+
+      .title {
+        position: absolute;
+        display: inline-block;
+        color: #6EDDF1;
+        background: #14418E;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 15px;
+        padding: 5px 14px;
+        background: radial-gradient(3rem 0.9rem ellipse, rgba(7, 9, 34, .8) 60%, #154391);
+      }
+
+      .angle1 {
+        display: inline-block;
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        top: 0;
+        left: 0;
+        border-top: 1px solid #1C5AB3;
+        border-left: 1px solid #1C5AB3;
+
+      }
+
+      .angle2 {
+        display: inline-block;
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        top: 0;
+        right: 0;
+        border-top: 1px solid #1C5AB3;
+        border-right: 1px solid #1C5AB3;
+
+      }
+
+      .angle3 {
+        display: inline-block;
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        bottom: 0;
+        left: 0;
+        border-bottom: 1px solid #1C5AB3;
+        border-left: 1px solid #1C5AB3;
+
+      }
+
+      .angle4 {
+        display: inline-block;
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        bottom: 0;
+        right: 0;
+        border-bottom: 1px solid #1C5AB3;
+        border-right: 1px solid #1C5AB3;
+
+      }
+    }
+
+    div[id^=char] {
+      width: 100%;
+    }
+
+    #char01 {
+      height: 200px;
+    }
+  }
+
+
+}
+
+#app {
+  background: url("./images/bg.png") no-repeat center center  / 100% 100%;
+}
