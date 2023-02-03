@@ -57,6 +57,7 @@ onMounted(InitChart);
         <span class="angle3"></span>
         <span class="angle4"></span>
         <div id="char01"></div>
+
       </div>
       <div class="content">
         <span class="title">条形图</span>
