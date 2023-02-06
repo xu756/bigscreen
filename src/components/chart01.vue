@@ -45,55 +45,49 @@ onMounted(() => {
     },
     series: [
       {
-        min: 0,
-        max: 100,
         type: 'gauge',
+        progress: {
+          show: true,
+          width: 10
+        },
         axisLine: {
           lineStyle: {
-            width: 15,
-            color: [
-              [0, '#2CFAFC'],
-              [0.33, '#4BAEFD'],
-              [0.67, '#FFE24D'],
-              [0.99, '#F85C1D'],
-              // [1, '#0b275B'] // 底色
-            ]
+            width: 10
           }
-        },
-        pointer: {
-          width: 3,
         },
         axisTick: {
-          distance: -15,
-          length: 9,
-          lineStyle: {
-            color: '#fff',
-            width: 1
-          }
+          show: false
         },
         splitLine: {
-          distance: -15,
-          length: 15,
-          lineStyle: {
-            color: '#ffffff',
-            width: 3
-          }
+          show: false
+
         },
         axisLabel: {
-          color: 'inherit',
-          distance: -15,
-          fontSize: 10
+          distance: -35,
+          color: 'rgb(0, 204, 255)',
+          fontSize: 12
+        },
+        anchor: {
+          show: true,
+          showAbove: true,
+          size: 10,
+          itemStyle: {
+            borderWidth: 5
+          }
+        },
+        title: {
+          show: false
         },
         detail: {
           valueAnimation: true,
           fontSize: 15,
+          color: 'rgb(0, 204, 255)',
           formatter: '{value} %',
-          color: 'inherit',
-          offsetCenter: [0, '50%']
+          offsetCenter: [0, '70%']
         },
         data: [
           {
-            value: props.temperature
+            value: 70
           }
         ]
       }
